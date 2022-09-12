@@ -124,7 +124,9 @@ public class ComplexTest {
     void testToStringFormat(){
         assertThat(oneMinusI.toString()).isEqualTo("1.0 - 1.0i");
         assertThat(onePlusI.toString()).isEqualTo("1.0 + 1.0i");
-        assertThat(minusI.toString()).isEqualTo("-1.0i");
+        assertThat(minusI.toString()).isEqualTo("-1.0i"); //         minusI = new Complex(0,-1);
+
+
         assertThat(twoI.toString()).isEqualTo("2.0i");
         assertThat(two.toString()).isEqualTo("2.0");
     }
